@@ -1,10 +1,7 @@
-import http
-import http.client
 import logging
 import re
 import sys
 import requests
-from bs4 import BeautifulSoup
 
 logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 

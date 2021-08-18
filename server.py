@@ -19,7 +19,7 @@ class Server(BaseHTTPRequestHandler):
         self._set_headers()
         rate = get_currency(1)
         self._set_headers()
-        response = json.dumps({'amount': 1, 'rubles': rate, 'currency': 'american dollar'})
+        response = json.dumps({'amount': 1, 'rubles': rate, 'currency': 'USD'})
         self.wfile.write(bytes(response, "utf-8"))
 
     def do_POST(self):
@@ -36,7 +36,7 @@ class Server(BaseHTTPRequestHandler):
         rate = get_currency(message['amount'])
 
         message['rubles'] = rate
-        message['currency'] = 'american dollar'
+        message['currency'] = 'USD'
 
         self._set_headers()
         response = json.dumps(message)
