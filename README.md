@@ -10,9 +10,7 @@
 
 ``git clone https://github.com/dnantonov/currency_converter && cd currency_converter``
 
-**Запускаем сервер**
-
-``python server.py``
+Запускаем сервер при помощи команды: ``python server.py``
 
 *Получение данных о курсе одного доллара.*  
 Метод: GET. Вводим в новом окне терминала следующую команду:
@@ -40,3 +38,13 @@
 В терминале вводим следующую команду, не приостанавливая работу сервера:
 
 ``python -m unittest``
+
+#### Запускаем проект внутри docker-контейнера
+В терминале вводим команду, чтобы сбилдить образ проекта: ``docker build -t currency-image .``  
+Далее при помощи приложения Docker Desktop запускаем образ и открываем терминал.
+
+![Docker Desktop run](screenshots/docker_1.png)
+
+Запускаем тесты. Делаем запрос на конвертацию валюты.  
+
+![Docker Desktop run](screenshots/docker_2.png)
