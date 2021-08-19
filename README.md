@@ -32,7 +32,8 @@
 
 В качестве результата получаем следующий вывод:
 
-![curl --data '{"amount":500}' --header "Content-Type: application/json" http://localhost:8080](screenshots/curl_post.png)
+![curl --data '{"amount":500}' --header "Content-Type: application/json" http://localhost:8080](screenshots/curl_post.png)  
+Здесь значение rubles соответствует 500 долларам США
 
 **Запускаем тесты**
 
