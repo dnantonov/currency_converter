@@ -7,7 +7,7 @@ from currency import get_currency
 
 class TestServerTestCase(TestCase):
     def setUp(self):
-        self.url = 'http://127.0.0.1:8000'
+        self.url = 'http://127.0.0.1:8080'
 
     def test_get(self):
         status_code = urllib.request.urlopen(self.url).getcode()
